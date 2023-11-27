@@ -14,12 +14,12 @@ from heap_sort import heapsort
 
 if __name__=="__main__":
     while True:
-        value = os.environ.get('MY_VALUE', 'default_value')
+        n = os.environ.get('MY_VALUE', 'default_value')
         ch = os.environ.get('MY_CHOICE', 'default_choice')
 
 
         # Use the values in your script
-        print(f"Value: {value}")
+        print(f"Value: {n}")
         print(f"Choice: {ch}")
         
         #n=int(input(" How many Numbers: \n"))
