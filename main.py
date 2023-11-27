@@ -21,7 +21,7 @@ if __name__=="__main__":
         print('4. Merge Sort')
         print('5. Quick Sort')
         print('6. Heap Sort')
-        ch=int(input("Enter your choice: "))
+        ch=int(input("Enter your choice: \n"))
         
         y = np.random.randint(1,n+1,n)
         fig,axes = plt.subplots()
