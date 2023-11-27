@@ -13,7 +13,7 @@ from heap_sort import heapsort
 
 if __name__=="__main__":
     while True:
-        n=int(input(" How many Numbers: "))
+        n=int(input(" How many Numbers: \n"))
         
         print('1. Bubble Sort')
         print('2. Selection Sort')
