@@ -17,12 +17,6 @@ if __name__=="__main__":
         value = os.environ.get('MY_VALUE', 'default_value')
         ch = os.environ.get('MY_CHOICE', 'default_choice')
 
-        # Convert value to an integer if needed
-        try:
-            n = int(value)
-        except ValueError:
-            print("Invalid value. Please provide an integer.")
-            exit(1)
 
         # Use the values in your script
         print(f"Value: {n}")
