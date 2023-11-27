@@ -19,7 +19,7 @@ if __name__=="__main__":
 
 
         # Use the values in your script
-        print(f"Value: {n}")
+        print(f"Value: {value}")
         print(f"Choice: {ch}")
         
         #n=int(input(" How many Numbers: \n"))
