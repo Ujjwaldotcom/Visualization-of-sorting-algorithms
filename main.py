@@ -14,15 +14,19 @@ from heap_sort import heapsort
 
 if __name__=="__main__":
     while True:
-        n = os.environ.get('MY_VALUE', 'default_value')
-        ch = os.environ.get('MY_CHOICE', 'default_choice')
+        value = os.environ.get('MY_VALUE', 'default_value')
+        choice = os.environ.get('MY_CHOICE', 'default_choice')
 
 
         # Use the values in your script
         print(f"Value: {n}")
         print(f"Choice: {ch}")
-        
-        #n=int(input(" How many Numbers: \n"))
+
+        try:
+            n=int(value)
+        except ValueError:
+            print("Invalid value, Please provide integers.")
+            exit(1)
         
         print('1. Bubble Sort')
         print('2. Selection Sort')
@@ -30,7 +34,12 @@ if __name__=="__main__":
         print('4. Merge Sort')
         print('5. Quick Sort')
         print('6. Heap Sort')
-        #ch=int(input("Enter your choice: \n"))
+
+        try:
+            ch=int(choice)
+        except ValueError:
+            print("Invalid choice. Please provide integers.")
+            exit(1)
         
         y = np.random.randint(1,n+1,n)
         fig,axes = plt.subplots()
