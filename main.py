@@ -19,8 +19,8 @@ if __name__=="__main__":
 
 
         # Use the values in your script
-        print(f"Value: {n}")
-        print(f"Choice: {ch}")
+        print(f"Value: {value}")
+        print(f"Choice: {choice}")
 
         try:
             n=int(value)
