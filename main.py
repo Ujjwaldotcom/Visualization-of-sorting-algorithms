@@ -14,8 +14,8 @@ from heap_sort import heapsort
 
 if __name__=="__main__":
     while True:
-        value = os.environ.get('MY_VALUE', 'default_value')
-        choice = os.environ.get('MY_CHOICE', 'default_choice')
+        value = os.environ.get('MY_VALUE')
+        choice = os.environ.get('MY_CHOICE')
 
 
         # Use the values in your script
