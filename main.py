@@ -1,4 +1,5 @@
 import os
+import sys
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.animation import FuncAnimation
@@ -14,19 +15,13 @@ from heap_sort import heapsort
 
 if __name__=="__main__":
     while True:
-        value = os.environ.get('MY_VALUE')
-        choice = os.environ.get('MY_CHOICE')
+        n = int(sys.argv[1])
+        ch = int(sys.argv[2])
 
 
         # Use the values in your script
-        print(f"Value: {value}")
-        print(f"Choice: {choice}")
-
-        try:
-            n=int(value)
-        except ValueError:
-            print("Invalid value, Please provide integers.")
-            exit(1)
+        print(f"Value: {n}")
+        print(f"Choice: {ch}")
         
         print('1. Bubble Sort')
         print('2. Selection Sort')
@@ -35,12 +30,6 @@ if __name__=="__main__":
         print('5. Quick Sort')
         print('6. Heap Sort')
 
-        try:
-            ch=int(choice)
-        except ValueError:
-            print("Invalid choice. Please provide integers.")
-            exit(1)
-        
         y = np.random.randint(1,n+1,n)
         fig,axes = plt.subplots()
         
