@@ -15,8 +15,8 @@ from heap_sort import heapsort
 
 if __name__=="__main__":
     while True:
-        n = int(sys.argv[1])
-        ch = int(sys.argv[2])
+        ch = int(input())
+        n = int(input())
 
 
         # Use the values in your script
